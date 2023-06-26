@@ -1,0 +1,129 @@
+:root {
+    --cor-primaria:   hsl(0, 0%, 95%);
+    --cor-secundaria: rgb(205, 141, 120);
+    --cor-terciaria:  hsl(15, 76%, 53%);
+    --cor-link:       hsla(0, 2%, 62%, 0.596);
+    --cor-rodape :    rgb(134, 133, 133);
+}
+
+
+
+body {
+    
+    box-sizing: border-box;
+    background-color: hsl(0, 3%, 30%);
+    color: hsl(15, 76%, 53%); 
+} 
+
+.cabecalho{
+   padding: 3% 1% 0% 15%;
+}
+
+.cabecalho__menu{
+  display: flex;
+  gap: 30px;
+
+}
+
+.cabecalho__menu__link{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: rgb(205, 141, 120);
+    text-decoration: none;
+}
+
+.apresentacao {
+
+    padding: 4% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+ 
+.apresentacao__conteudo {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+   
+}
+
+.titulo-destaque {
+    /* color: rgb(226, 89, 43); */
+
+    color: hsl(15, 76%, 53%);
+}
+
+.apresentacao__links {
+  display:  flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  align-items: center;
+  gap: 22px;
+  
+}
+
+.apresentacao__subtitulo__link {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.apresentacao__links__navegation {
+
+    /* background-color: rgb(79, 75, 75); */
+    display: flex;
+    justify-content: center;
+    padding: 16.5px 0;
+    gap: 10px;
+    border:2px solid hsl(15, 76%, 53%);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2.54rem;
+    font-weight: 200;   
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.apresentacao__link__link:hover{
+  background-color: hsla(0, 2%, 62%, 0.596);
+}
+
+.apresentacao__img{
+    width: 50%;
+}
+
+.rodape{
+    padding: 58px;
+    background-color: rgb(134, 133, 133);
+    color: hsl(15, 76%, 53%); 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+
+@media (max-width: 1400px ) {
+    .cabecalho{
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+
+    .apresentacao{
+        flex-direction:  column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
